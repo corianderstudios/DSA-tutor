@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "An interactive, accessible study guide for data structures & algorithms coding interviews, built with React + Vite + Tailwind.",
+  "homepage": "https://corianderstudios.github.io/DSA-tutor/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,9 +12,13 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:ui": "vitest --ui",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "lint": "eslint ."
   },
   "dependencies": {
+    "eslint": "^10.11.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -23,6 +28,7 @@
     "@testing-library/user-event": "^14.5.2",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.19",
+    "gh-pages": "^6.3.0",
     "jsdom": "^24.1.1",
     "postcss": "^8.4.40",
     "tailwindcss": "^3.4.7",
