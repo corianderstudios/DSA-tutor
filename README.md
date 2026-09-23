@@ -4,6 +4,13 @@ An interactive study guide for the data structures and algorithms most
 commonly tested in coding interviews — explained in plain JavaScript, with
 a runnable playground and a practice question for every topic.
 
+## Development Process
+
+This repository was **vibe coded** utilizing AI agents under human supervision.
+
+- **Primary Driver:** `Claude Code`
+- **Human Vibe Level:** _Collaborative Vibe_ (AI generated the heavy lifting, human reviewed architectures and edge cases).
+
 ## Features
 
 - **10 core topics**: arrays & strings, hash tables, linked lists, stacks &
@@ -23,13 +30,6 @@ a runnable playground and a practice question for every topic.
   themes are tuned for comfortable contrast.
 - **Serif display type / sans-serif body type** — headings use Lora, body
   copy uses Inter, and code uses JetBrains Mono.
-
-## 🔮 Development Process
-
-This repository was **vibe coded** utilizing AI agents under human supervision.
-
-- **Primary Driver:** `Claude Code`
-- **Human Vibe Level:** _Collaborative Vibe_ (AI generated the heavy lifting, human reviewed architectures and edge cases).
 
 ## Getting started
 
