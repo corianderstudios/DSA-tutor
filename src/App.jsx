@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
-import Sidebar from './components/Sidebar.jsx';
-import TopicView from './components/TopicView.jsx';
-import ThemeToggle from './components/ThemeToggle.jsx';
-import { topics } from './data/topics.js';
+import React, { useState } from "react";
+import Sidebar from "./components/Sidebar.jsx";
+import TopicView from "./components/TopicView.jsx";
+import ThemeToggle from "./components/ThemeToggle.jsx";
+import { topics } from "./data/topics.js";
 
 export default function App() {
   const [selectedTopicId, setSelectedTopicId] = useState(topics[0].id);
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
-  const selectedTopic = topics.find((t) => t.id === selectedTopicId) ?? topics[0];
+  const selectedTopic =
+    topics.find((t) => t.id === selectedTopicId) ?? topics[0];
 
   return (
     <div className="min-h-screen bg-paper text-ink dark:bg-night dark:text-cream">
@@ -31,12 +32,14 @@ export default function App() {
           >
             <span aria-hidden="true">☰</span>
           </button>
-          <span className="font-serif text-lg font-bold sm:text-xl">DSA Interview Prep</span>
+          <span className="font-serif text-lg font-bold sm:text-xl">
+            DSA Interview Prep
+          </span>
         </div>
         <ThemeToggle />
       </header>
 
-      <div className="mx-auto flex w-full max-w-7xl">
+      <div className="mx-auto flex w-full">
         <Sidebar
           selectedTopicId={selectedTopicId}
           onSelectTopic={setSelectedTopicId}
